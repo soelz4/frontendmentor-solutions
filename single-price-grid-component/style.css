@@ -1,7 +1,14 @@
 html {
+  box-sizing: border-box;
   font-family: "Karla";
   font-size: 16px;
   font-weight: 400;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -103,4 +110,20 @@ ul {
   list-style: none;
   font-size: 0.8rem;
   opacity: 0.8;
+}
+
+/* x <= 700px */
+@media (max-width: 700px) {
+  #box-bottom {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+  #box-bottom-left,
+  #box-bottom-right,
+  .container {
+    height: auto;
+    width: 100%;
+  }
 }
