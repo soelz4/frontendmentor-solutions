@@ -16,10 +16,9 @@ body {
   flex-direction: column;
 }
 
-.container {
+#testimonial-grid-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 550px;
   background-color: #ecf2f8;
 }
@@ -61,9 +60,6 @@ h3 {
   margin: 5px 0 5px 0;
 }
 
-.attribution {
-}
-
 #testimonial-1 {
   position: relative;
   z-index: 0;
@@ -87,4 +83,53 @@ h3 {
 
 #testimonial-5 {
   background-color: white;
+}
+
+/* >= 576px */
+@media (min-width: 576px) {
+  #testimonial-grid-container {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  #left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    margin: 5px 0 5px 5px;
+  }
+
+  #right {
+    display: flex;
+    flex-basis: 25%;
+    margin: 5px 0 5px 0;
+  }
+
+  #up {
+    display: flex;
+    flex-basis: 50%;
+    margin-bottom: 5px;
+  }
+
+  #down {
+    display: flex;
+    flex-basis: 50%;
+    margin-top: 5;
+  }
+
+  #testimonial-1 {
+    flex-basis: 75%;
+  }
+
+  #testimonial-2 {
+    flex-basis: 25%;
+  }
+
+  #testimonial-3 {
+    flex-basis: 25%;
+  }
+
+  #testimonial-4 {
+    flex-basis: 75%;
+  }
 }
