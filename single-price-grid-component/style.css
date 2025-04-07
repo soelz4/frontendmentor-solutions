@@ -51,7 +51,7 @@ body {
 
 #box-bottom-left,
 #box-bottom-right {
-  width: 50%;
+  flex-basis: 50%;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10%;
